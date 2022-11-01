@@ -12,12 +12,13 @@
                 <%= item.name %>
             </p>
         </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>"></form>
     </form>
     <% }) %>
 
     <form action="/" method="post" class="item">
         <input type="text" name="newItem" placeholder="Isi apa aja" autocomplete="off">
-        <button type="submit" name="button" value=<%= listTitle %>>+</button>
+        <button type="submit" name="list" value="<%= listTitle %>">+</button>
     </form>
 </div>
 
